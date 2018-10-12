@@ -1,0 +1,37 @@
+<h1>Circuit {{circuit.id}}</h1>
+
+<table class="table">
+    <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ circuit.id }}</td>
+        </tr>
+        <tr>
+            <th>...</th>
+            <td>...</td>
+        </tr>
+    </tbody>
+</table>
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/bootstrap.min.js"></script>
+
+<table>
+  <thead>
+    <tr>
+             <th>Numéro</th>
+        <th>...</th>
+    </tr>
+  </thead>
+
+  {%  for etape in circuit.etapes %}
+  <tr>
+    <td>{{ etape.numeroEtape }}</td>
+    <td>...</td>
+  </tr>
+  {% endfor %} {# etapes #}
+</table>
+
+{{ dump(circuit) }}
+
+<a href="{{ path('frontoffice_home') }}">retour à l'accueil</a>

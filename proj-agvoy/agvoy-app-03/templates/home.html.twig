@@ -1,0 +1,18 @@
+{# templates/home.html.twig #}
+
+{# Template de la page d'accueil de l'application #}
+
+{% extends "base.html.twig" %}
+
+{% block title %}{{ parent() }} - Site de Voyage{% endblock %}
+
+{% block main %}
+
+<h1>Site de voyage</h1>
+
+<p>{{ welcome }}</p>
+
+<a href="home">Circuits</a>
+
+{% endblock %} {# main #}
+

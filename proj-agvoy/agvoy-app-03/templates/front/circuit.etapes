@@ -1,0 +1,15 @@
+<table>
+  <thead>
+    <tr>
+             <th>Numéro</th>
+        <th>...</th>
+    </tr>
+  </thead>
+
+  {%  for etape in circuit.etapes %}
+  <tr>
+    <td>{{ etape.numeroEtape }}</td>
+    <td>...</td>
+  </tr>
+  {% endfor %} {# etapes #}
+</table>
