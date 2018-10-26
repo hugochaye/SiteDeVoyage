@@ -43,6 +43,9 @@ class Circuit
      */
     private $dureeCircuit;
 
+
+
+
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\Etape", mappedBy="circuit", orphanRemoval=true)
      */
@@ -57,6 +60,7 @@ class Circuit
     {
         return $this->id;
     }
+
 
     public function getDescription(): ?string
     {
@@ -147,5 +151,8 @@ class Circuit
         }
 
         return $this;
+    }
+    public function __toString() {
+        return (string) $this->getId();
     }
 }

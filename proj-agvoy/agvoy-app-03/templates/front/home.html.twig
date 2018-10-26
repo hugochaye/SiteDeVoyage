@@ -4,43 +4,43 @@
 
 {% block body %}
 
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+
 <style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<div class="example-wrapper">
-    
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'src/Controller/FrontofficeHomeController.php'|file_link(0) }}">src/Controller/FrontofficeHomeController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'templates/frontoffice_home/index.html.twig'|file_link(0) }}">templates/frontoffice_home/index.html.twig</a></code></li>
-    </ul>
-</div>
 
 
-
+<div class="jumbotron jumbotron-fluid">
 <h1>Liste des circuits</h1>
-
-    <table class="table">
-        <thead>
+</div>
+    <table class="table table-bordered">
+        <thead class="thead-dark">
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <script src="/js/bootstrap.min.js"></script>
             <tr>
                 <th>Id</th>
-                <th>...</th>
+                <th>Région</th>
+		
             </tr>
 
         </thead>
         <tbody>
 	{%dump(circuits)%}
+
+
         {% for circuit in circuits %}
             <tr>
                 <td>{{ circuit.id }}</td>
+		<th>{{ circuit.description}}</td>
+		<td><a href="{{ path('front_circuit_show', {id: circuit.id}) }}">détails</a></td>
                 <td>
-		     <a href="{{ path('front_circuit_show', {id: circuit.id}) }}">détails</a>
-		</td>
+                    {{ include('Likes') }}
+                </td>
             </tr>
         {% else %}
             <tr>
@@ -52,10 +52,14 @@
 
     </table>
 
+    <p><a href="{{ path('circuit_index') }}"><button type="button" class="btn btn-primary">Modification des circuits</button></a></p>
 
+    <p><a href="{{ path('etape_index') }}"><button type="button" class="btn btn-primary">Modification des étapes</button></a></p>
 
+    <p></p><a href="{{ path('home') }}"><kbd>Retour à l'accueil</kbd></a></p>
 	
 
+<script src="/js/bootstrap.min.js"></script>
 
 
 {% endblock %}

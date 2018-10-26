@@ -21,6 +21,7 @@ class IndexController extends Controller
      */
     public function indexAction()
     {
+
         return $this->render('home.html.twig',array(
             'welcome' => "Bonjour, j'aime le chocolat")
             );

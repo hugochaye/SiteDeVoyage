@@ -15,7 +15,9 @@ class FrontofficeHomeController extends AbstractController
     {
 
 	$em = $this->getDoctrine()->getManager();
-	$circuits = $em->getRepository(Circuit::class)->findAll();
+
+
+        $circuits = $em->getRepository(Circuit::class)->findAll();
 
      		 dump($circuits);
 	
@@ -47,5 +49,10 @@ class FrontofficeHomeController extends AbstractController
    	 'circuit' => $circuit,
    	 ]);
 	}
+
+
+
+
+
 	
 }
