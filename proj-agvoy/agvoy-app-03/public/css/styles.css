@@ -1,3 +1,19 @@
+/* bouton like*/
+
+.Like {
+	display:block;
+	width:150px;
+	line-height:50px;
+	text-align:center;
+	vertical-align:middle;
+	background:url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Facebook_like_thumb.png/700px-Facebook_like_thumb.png) no-repeat;
+	color:white;
+	text-decoration:none;
+}
+.Like:hover {
+	background:url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Facebook_like_thumb.png/700px-Facebook_like_thumb.png) no-repeat;
+}
+
 /* micro reset */
 * {
 	box-sizing: border-box;

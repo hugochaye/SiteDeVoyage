@@ -5,7 +5,7 @@
 {% block body %}
 
 
-
+<link rel="stylesheet" href="/css/styles.css"
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 
 <style>
@@ -13,7 +13,22 @@
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
+    <header id="header" role="banner" class="main-header">
+        <div class="header-inner">
 
+
+
+            <nav class="header-nav">
+                <ul>
+                    <li><a href={{  path('home') }}>Home</a></li>
+                    <li><a href="home">Circuits</a></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9com_SudParis" target="_blank">About us</a></li>
+                    <li><a class="nav-link" href={{ path('fos_user_security_login')}}>Log In</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
 
 <div class="jumbotron jumbotron-fluid">
 <h1>Liste des circuits</h1>
