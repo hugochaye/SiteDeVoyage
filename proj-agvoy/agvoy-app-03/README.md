@@ -11,3 +11,6 @@ To test, use :
  $ composer create-project oberger/tspcsc4101-agvoy-skeleton agvoy-app
 
 -- Olivier Berger
+
+
+PROJET DE TRISTAN CHEDEVILLE & HUGO CHAYE

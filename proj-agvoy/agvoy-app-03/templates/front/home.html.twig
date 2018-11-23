@@ -40,6 +40,7 @@
 		<td><a href="{{ path('front_circuit_show', {id: circuit.id}) }}">détails</a></td>
                 <td>
                     {{ include('Likes') }}
+
                 </td>
             </tr>
         {% else %}
@@ -51,11 +52,12 @@
 
 
     </table>
-
-    <p><a href="{{ path('circuit_index') }}"><button type="button" class="btn btn-primary">Modification des circuits</button></a></p>
-
-    <p><a href="{{ path('etape_index') }}"><button type="button" class="btn btn-primary">Modification des étapes</button></a></p>
-
+    {% if is_granted('ROLE_ADMIN') %}
+        <p><a href="{{ path('circuit_index') }}"><button type="button" class="btn btn-primary">Modification des circuits</button></a></p>
+    {% endif %}
+    {% if is_granted('ROLE_ADMIN') %}
+        <p><a href="{{ path('etape_index') }}"><button type="button" class="btn btn-primary">Modification des étapes</button></a></p>
+    {% endif %}
     <p></p><a href="{{ path('home') }}"><kbd>Retour à l'accueil</kbd></a></p>
 	
 

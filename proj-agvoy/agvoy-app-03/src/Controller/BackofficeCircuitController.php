@@ -103,12 +103,19 @@ class BackofficeCircuitController extends AbstractController
         {
 
             $likes = $this->get('session')->get('likes');
-            if ( $id[$likes] == null) {
-                $id[$likes] = [$id];
+            dump($likes);
+            if ($likes == null){
+                $likes = array($id);
             }
             else{
-                $id[$likes] = null;
+                if (in_array($id, $likes)){
+                    $likes = array_diff($likes, array($id));
+                }
+                else{
+                    $likes[] = $id;
+                }
             }
+            dump($likes);
             $this->get('session')->set('likes', $likes);
 
 
