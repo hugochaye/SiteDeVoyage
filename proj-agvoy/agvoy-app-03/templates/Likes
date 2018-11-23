@@ -9,8 +9,8 @@
 
 
 
-<form method="post" class="Like" action="{{ path('circuit_like', {'id': circuit.id}) }}" onsubmit="return confirm('Are you sure you want to like this circuit?');">
+<form method="post" action="{{ path('circuit_like', {'id': circuit.id}) }}" onsubmit="return confirm('Are you sure you want to like this circuit?');">
     <input type="hidden" name="_method" value="LIKE">
     <input type="hidden" name="_token" value="{{ csrf_token('like' ~ circuit.id) }}">
-    <button >Like<i class="fa fa-thumbs-up"></i></button>
+    <button class="bouton-like">Like</button>
 </form>

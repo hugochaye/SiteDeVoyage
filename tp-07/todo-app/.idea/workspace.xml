@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d631d559-3c04-4cc7-973f-3faa7a5dc17e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03.tar.xz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/public/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/templates/Likes" beforeDir="false" afterPath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/templates/Likes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/templates/front/circuit_show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/templates/front/circuit_show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/templates/front/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/templates/front/home.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/templates/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/templates/home.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +19,7 @@
     <session id="493395299">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.opened" value="2" />
@@ -273,7 +268,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="35" width="1920" height="2125" extended-state="4" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25465497" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
