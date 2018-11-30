@@ -5,6 +5,41 @@
 {% block title %}Paste index{% endblock %}
 
 {% block body %} {# Bootstrap container #}
+
+
+<link rel="stylesheet" href="css/styles.css">
+
+<header id="header" role="banner" class="main-header">
+    <div class="header-inner">
+
+
+
+        <nav class="header-nav">
+            <ul>
+                <li><a href={{  path('home') }}>Home</a></li>
+                <ul id="menu-deroulant">
+                    <li><a href="home">Circuits</a>
+                        {% if app.session.get('likes')  %}
+                            <ul>
+                                {% for like in app.session.get('likes') %}
+                                    <li><a href="{{ path('front_circuit_show', {id: like}) }}">Circuit {{ like }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </li>
+                </ul>
+                <li><a href="https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9com_SudParis" target="_blank">About us</a></li>
+                {% if is_granted("ROLE_USER") %}
+                    <li> <img class="avatar" src="css/Ressources/avatar.png"></img>( Hi {{ app.user.username }} ! <a class="nav-link" href="{{ path('fos_user_security_logout') }}">Log out )</a></li>
+                {% else %}
+                    <li><a class="nav-link" href={{ path('fos_user_security_login')}}>Log In</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
 	<header>
      {% block menu %}
                 Bonsoir à tous

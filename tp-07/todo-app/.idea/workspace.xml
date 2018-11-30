@@ -5,6 +5,12 @@
       <change beforePath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/public/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/templates/Likes" beforeDir="false" afterPath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/templates/Likes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/templates/back/etape/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/templates/back/etape/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/templates/back/etape/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/templates/back/etape/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/templates/front/circuit_show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/templates/front/circuit_show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/templates/front/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/templates/front/home.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/templates/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/../../proj-agvoy/agvoy-app-03/templates/home.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,10 +25,11 @@
     <session id="493395299">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.45" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.48" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -47,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/templates/home.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1508">
-              <caret line="52" column="10" lean-forward="true" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+              <caret line="52" column="10" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -61,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/src/Menu/MenuBuilder.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="551">
-              <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+              <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -260,16 +267,18 @@
       <updated>1542365763078</updated>
       <workItem from="1542365764401" duration="1319000" />
       <workItem from="1542967001334" duration="1795000" />
+      <workItem from="1543226895021" duration="619000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3114000" />
+    <option name="totallyTimeSpent" value="3733000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="35" width="1920" height="2125" extended-state="4" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25465497" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26067907" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -304,23 +313,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Menu/MenuBuilder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/home.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1508">
-          <caret line="52" column="10" lean-forward="true" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+          <caret line="52" column="10" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Menu/MenuBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
         </state>
       </provider>
     </entry>

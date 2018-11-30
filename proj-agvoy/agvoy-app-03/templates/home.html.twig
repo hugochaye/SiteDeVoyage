@@ -18,22 +18,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
-    <header id="header" role="banner" class="main-header">
-        <div class="header-inner">
 
-
-
-            <nav class="header-nav">
-                <ul>
-                    <li><a href={{  path('home') }}>Home</a></li>
-                    <li><a href="home">Circuits</a></li>
-                    <li><a href="https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9com_SudParis" target="_blank">About us</a></li>
-                    <li><a class="nav-link" href={{ path('fos_user_security_login')}}>Log In</a></li>
-                       </ul>
-            </nav>
-
-        </div>
-    </header>
 
 
 
@@ -61,53 +46,3 @@
 
 {% endblock %} {# main #}
 
-{% block custompage_script %}
-<script>
-
-    // Chargement de la liste des tâches en AJAX avec JQuery
-    $(document).ready(function(){
-        // enregistrer un gestionnaire de clics sur le bouton d'id 'todosbtn'
-        $("#todosbtn").click(function(){
-            // récupération AJAX de la liste des tâches au format JSON
-            $.get("/api/todos", function(getresult){
-                    // console.log(getresult);
-                    // insertion d'une liste dans la cible prévue dans le DOM
-                    $(".divtasks").empty();
-                    var ul = $(".divtasks").append('<ul class="tasksul".>');
-                    // Gestion des résultats de la liste récupérés
-                    $(getresult).each( function(index, item) {
-                        // ajout d'un élément dans la liste
-                        ul.append(
-                            $(document.createElement('li')).text(item.title)
-                        );
-                    });
-                },
-                "json");
-        });
-        // enregistrer un gestionnaire de clics sur le bouton d'id 'pastesbtn'
-        $("#pastesbtn").click(function(){
-            // récupération AJAX de la liste des tâches au format JSON
-            $.get("/api/pastes", function(getresult){
-                    // console.log(getresult);
-                    $(".divpastes").empty();
-                    // insertion d'une liste dans la cible prévue dans le DOM
-                    var ul = $(".divpastes").append('<ul>');
-                    // Gestion des résultats de la liste récupérés
-                    $(getresult).each( function(index, item) {
-                        // ajout d'un élément dans la liste
-                        ul.append(
-                            $(document.createElement('li')).text(item.content)
-                        );
-                    });
-                },
-                "json");
-        });
-
-    });
-
-</script>
-
-
-
-
-{% endblock %} {# custompage_script #}
